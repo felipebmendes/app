@@ -1,0 +1,41 @@
+{
+  "online": {
+    "processes": [
+      {
+        "name": "DeepAuditTraining",
+        "algorithmName": "DeepAudit",
+        "algorithmTitle": {
+          "en-US": "Training DeepAudit",
+          "pt-br": "Training DeepAudit"
+        },
+        "algorithmDescription": {
+          "en-US": "Training DeepAudit",
+          "pt-br": "Training DeepAudit"
+        },
+        "instanceProperties": {
+          "profile": "",
+          "properties": {
+            "dockerName": "app-image-test",
+            "flavor": "c1.small"
+          },
+          "environments": {
+            "ENV": "PROD",
+            "LOCALSCHEDULER": "True"
+          }
+        }
+      }
+    ]
+  },
+  "docker": [
+    {
+      "dockerName": "app-image-test",
+      "dockerTag": "0.0.1",
+      "gitBranch": "master",
+      "gitPath": ".",
+      "instanceType": "c1.small",
+      "gitDockerfileName": "Dockerfile",
+      "gitRepoUrl": "https://github.com/felipebmendes/app",
+      "appName": "teste"
+    }
+  ]
+}

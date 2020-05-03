@@ -1,0 +1,9 @@
+1. tenant and organization are set as github secrets. we could have a config file to this,
+3. I manually add a "appName" key to the manifest "docker" key in the manifest. We could add this in the config file.
+4. we are creating the task and finishing the action, we should keep the action running until the and, maybe even add
+logs for that. since carol has the logs.
+
+Question:
+* Should we create a new release in carol too after the build? Carol version is not necessarily the same as the git.
+* I made bumpversion to bump the tag version inside the manifest file.
+ if I have more then one image it will change both
