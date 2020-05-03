@@ -23,7 +23,6 @@ jobs:
     - name: Build
       uses: felipebmendes/carol-build-image-action@master
       with:
-        who-to-greet: 'Mona the Octocat'
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         carol-tenant: 'mendes'
         carol-organization: 'datascience'
