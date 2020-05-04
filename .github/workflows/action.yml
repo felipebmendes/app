@@ -29,4 +29,5 @@ jobs:
         carol-app-name: 'teste'
         carol-connector-id: ${{ secrets.CAROLCONNECTORID }}
         carol-api-key: ${{ secrets.CAROLAPPOAUTH }}
+        manifest-path: '/ai-script/'
 
